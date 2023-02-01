@@ -1,0 +1,68 @@
+@import "../../../styles/variables.scss";
+
+.map-img {
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-img {
+  display: block;
+}
+
+.home-img {
+  @media screen and (min-width: 300px) {
+    height: 150px;
+    width: 325px;
+  }
+  @media screen and (min-width: 600px) {
+    height: 250px;
+    width: 475px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 150px;
+    width: 325px;
+  }
+  @media screen and (min-width: 992px) {
+    height: 250px;
+    width: 475px;
+  }
+}
+
+.icon-row {
+  display: flex;
+  justify-content: center;
+}
+
+.img-cennter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-button-container {
+  display: flex;
+  justify-content: center;
+  button {
+    background-color: $green-color;
+    border-radius: 8px;
+    border-style: none;
+    padding: 13px 32px 16px 32px;
+    a {
+      color: $black-color;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  }
+  button:hover {
+    background: $green-color;
+    box-shadow: inset 20px 20px 60px #6fad37,
+                inset -20px -20px 60px #96e94b;
+  }
+}
+
+.brand-logo {
+  height: 80px;
+}

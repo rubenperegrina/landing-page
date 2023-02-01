@@ -1,0 +1,30 @@
+@import "../../../styles/variables.scss";
+
+.login-button-container {
+  background-color: $green-color;
+  border-radius: 8px;
+  border-style: none;
+  padding: 8px 16px 8px 16px;
+  color: $black-color;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-button-container:hover {
+  box-shadow: inset 20px 20px 60px #6fad37,
+  inset -20px -20px 60px #96e94b;
+}
+
+.login-button-container:disabled {
+  box-shadow: inset 20px 20px 60px grey,
+  inset -20px -20px 60px grey;
+}
+
+.checkbx_privacy {
+  width: 18px;
+  height: 18px;
+}
+
+.error-message {
+  color: $red-color;
+}

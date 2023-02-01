@@ -1,0 +1,16 @@
+@import "../../../styles/variables.scss";
+
+.background-image {
+    background: url(../../../assets/images/home-background.png);
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    box-shadow: inset 1px -64px 40px rgb(0 0 0 / 70%);
+    display: flex;
+    align-items: flex-end;
+    color: $white-color;
+}
+
+.title {
+    padding-left: 8px;
+}

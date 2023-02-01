@@ -1,0 +1,39 @@
+@import "../../../styles/variables.scss";
+
+.footer-content-container {
+  background: $color-3;
+  background: linear-gradient(
+    100deg,
+    $color-3 0%,
+    $blue-color 50%,
+    $color-4 100%
+  );
+  width: 100%;
+  margin: 0;
+}
+
+.logo-container {
+  align-items: flex-end;
+  color: $white-color;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.links {
+  align-items: flex-end;
+  color: $white-color;
+  display: flex;
+  justify-content: flex-end;
+  a {
+    text-decoration: none;
+    p {
+      font-size: 16px;
+      padding-right: 6px;
+      color: $white-color;
+    }
+  }
+  a:hover {
+    font-size: 16px;
+    font-weight: 550;
+  }
+}

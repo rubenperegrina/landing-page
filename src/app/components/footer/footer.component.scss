@@ -1,0 +1,45 @@
+@import "../../../styles/variables.scss";
+
+.footer-content-container {
+    background: $color-3;
+    background: linear-gradient(100deg, $color-3 0%, $blue-color 50%, $color-4 100%);
+    width: 100%;
+    margin: 0;
+}
+
+.logo-container {
+    align-items: flex-end;
+    color: $white-color;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tarragona-container {
+    // align-items: flex-end;
+    color: $white-color;
+    display: flex;
+    // justify-content: flex-start;
+}
+
+.links {
+    align-items: flex-end;
+    color: $white-color;
+    display: flex;
+    justify-content: flex-end;
+    a {
+        text-decoration: none;
+        p {
+            font-size: 12px;
+            padding-right: 6px;
+            color: $white-color;
+        }
+    }
+    a:hover p {
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+
+.logo-tarragona {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(241deg) brightness(103%) contrast(103%);
+}

@@ -1,0 +1,44 @@
+<app-banner [bannerTitle]="bannerTitle"></app-banner>
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="submitForm()" class="mt-32">
+    <div class="col-sm-8 mx-auto row">
+      <div class="col-sm-12">
+        <label>Name*</label><br />
+        <input class="form-control" type="text" formControlName="name" />
+        <p *ngIf="form.get('name')?.invalid && form.get('name')?.touched" class="error-message">
+          The field name is mandatory
+        </p>
+      </div>
+      <div class="col-sm-12">
+        <label>Email*</label><br />
+        <input class="form-control" type="email" formControlName="email" />
+        <p *ngIf="form.get('email')?.invalid && form.get('email')?.touched" class="error-message">
+          The field email is mandatory
+        </p>
+      </div>
+      <div class="col-sm-12">
+        <label>Message*</label><br />
+        <textarea class="form-control" formControlName="message" cols="30" rows="5"></textarea>
+        <p *ngIf="form.get('message')?.invalid && form.get('message')?.touched" class="error-message">
+          The field message is mandatory
+        </p>
+      </div>
+      <div class="col-sm-12 mt-16">
+        <label class="justify-text"><input class="mr-8 checkbx_privacy" type="checkbox" formControlName="checkbox">I accept <a routerLink="/privacy-policy" class="link">the data processing</a>*</label>
+        <p *ngIf="!form.get('checkbox')?.value && form.get('checkbox')?.touched" class="error-message">
+          It is mandatory to accept the data processing
+        </p>
+      </div>
+      <div class="col-sm-12">
+        <button
+          class="login-button-container mt-16 mb-16"
+          type="submit"
+          [disabled]="form.invalid || !form.get('checkbox')?.value"
+        >
+          Send
+        </button>
+      </div>
+    </div>
+  </form>
+  
+</div>
